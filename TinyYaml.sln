@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.152
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyYaml", "TinyYaml\TinyYaml.csproj", "{65451863-D1CE-4C3B-8A29-4DAEFF74BF6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyYaml.UnitTests", "TinyYaml.UnitTests\TinyYaml.UnitTests.csproj", "{2364ADAE-2D3E-40D6-91B3-DFC892A599C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65451863-D1CE-4C3B-8A29-4DAEFF74BF6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65451863-D1CE-4C3B-8A29-4DAEFF74BF6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65451863-D1CE-4C3B-8A29-4DAEFF74BF6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65451863-D1CE-4C3B-8A29-4DAEFF74BF6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2364ADAE-2D3E-40D6-91B3-DFC892A599C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2364ADAE-2D3E-40D6-91B3-DFC892A599C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2364ADAE-2D3E-40D6-91B3-DFC892A599C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2364ADAE-2D3E-40D6-91B3-DFC892A599C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {945C0FEA-FF8B-4ED3-B455-B3873661E75C}
+	EndGlobalSection
+EndGlobal
