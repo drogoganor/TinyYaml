@@ -19,7 +19,7 @@ jobs:
       run: dotnet test
     - name: Build NuGet Package
       run: dotnet pack ./TinyYaml/TinyYaml.csproj --configuration Release -o NuGetPackages
+     - name: Deploy NuGet Package Azure Artifacts
+      run: dotnet nuget push ./NuGetPackages/TinyYaml.*.nupkg --source https://pkgs.dev.azure.com/dwilson0/drogoganor/_packaging/drogoganor/nuget/v3/index.json --api-key ${{ secrets.AZURE_API_KEY }}
     - name: Deploy NuGet Package
       run: dotnet nuget push ./NuGetPackages/TinyYaml.*.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json
-     - name: Deploy NuGet Package Azure Artifacts
-      run: dotnet nuget push --source https://pkgs.dev.azure.com/dwilson0/drogoganor/_packaging/drogoganor/nuget/v3/index.json --api-key ${{ secrets.AZURE_API_KEY }} ./NuGetPackages/TinyYaml.*.nupkg
