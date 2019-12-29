@@ -17,7 +17,7 @@ jobs:
       shell: pwsh
       env:
         AZURE_PASS: ${{ secrets.AZURE_API_KEY }}
-      run: ./Set-NuGetCredentials -ConfigFile ./nuget.config -Source drogoganor -Username dwilson0 -Password $env:AZURE_PASS
+      run: ./Set-NuGetCredentials -ConfigFile ./nuget.config -Source drogoganor -Username dwilson0@gmail.com -Password $env:AZURE_PASS
     - name: Build with dotnet
       run: dotnet build --configuration Release
     - name: Unit Tests
