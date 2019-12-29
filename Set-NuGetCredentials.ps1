@@ -1,3 +1,6 @@
+# https://github.com/NuGet/Home/issues/4126#issuecomment-533354997
+# Hack to patch nuget.config with credentials
+
 [CmdletBinding()]
 param (
     [Parameter(Mandatory = $true)][string]$ConfigFile,
