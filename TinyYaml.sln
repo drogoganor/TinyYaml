@@ -3,9 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29209.152
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyYaml", "TinyYaml\TinyYaml.csproj", "{65451863-D1CE-4C3B-8A29-4DAEFF74BF6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TinyYaml", "TinyYaml\TinyYaml.csproj", "{65451863-D1CE-4C3B-8A29-4DAEFF74BF6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyYaml.UnitTests", "TinyYaml.UnitTests\TinyYaml.UnitTests.csproj", "{2364ADAE-2D3E-40D6-91B3-DFC892A599C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TinyYaml.UnitTests", "TinyYaml.UnitTests\TinyYaml.UnitTests.csproj", "{2364ADAE-2D3E-40D6-91B3-DFC892A599C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FE36397C-21B6-4F3D-BD0A-8FD32373F7F4}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
