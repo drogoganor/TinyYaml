@@ -61,7 +61,7 @@ namespace TinyYaml
             return result;
         }
 
-        private async Task<TinyYamlNode> CreateNode(string name, Type type, object? value)
+        private async Task<TinyYamlNode> CreateNode(string name, Type type, object value)
         {
             var node = new TinyYamlNode()
             {

@@ -6,11 +6,11 @@ namespace TinyYaml.UnitTests
 	{
 		public string StringProperty { get; set; }
 		public string StringField;
-		public short ShortField;
+		public short ShortField = 0;
 		public int IntField;
-		public long LongField;
-		public float FloatField;
-		public double DoubleField;
+		public long LongField = 0;
+		public float FloatField = 0;
+		public double DoubleField = 0;
 		public YamlTestObject ChildObject;
 		public List<string> StringList;
 	}
