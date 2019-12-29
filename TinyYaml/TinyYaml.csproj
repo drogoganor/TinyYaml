@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <PackageId>TinyYaml</PackageId>
-    <PackageVersion>1.0.1-alpha</PackageVersion>
+    <PackageVersion>1.0.2-alpha</PackageVersion>
     <RepositoryUrl>https://github.com/drogoganor/TinyYaml</RepositoryUrl>
     <Description>Experimental custom Yaml format serializer/deserializer.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
