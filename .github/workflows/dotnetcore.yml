@@ -20,4 +20,4 @@ jobs:
     - name: Build NuGet Package
       run: dotnet pack ./TinyYaml/TinyYaml.csproj --configuration Release -o NuGetPackages
     - name: Deploy NuGet Package
-      run: dotnet nuget push ./NuGetPackages/TinyYaml.1.0.0-alpha.nupkg -k $ -s https://api.nuget.org/v3/index.json
+      run: dotnet nuget push ./NuGetPackages/TinyYaml.1.0.0-alpha.nupkg -k $NUGET_API_KEY -s https://api.nuget.org/v3/index.json
