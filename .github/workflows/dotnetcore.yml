@@ -13,17 +13,18 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.100
+    - name: Set NuGet creds
+      shell: pwsh
+      env:
+        AZURE_PASS: ${{ secrets.AZURE_API_KEY }}
+      run: ./Set-NuGetCredentials -ConfigFile ./nuget.config -Source drogoganor -Username dwilson0 -Password $env:AZURE_PASS
     - name: Build with dotnet
       run: dotnet build --configuration Release
-      env:
-        PAT: ${{ secrets.AZURE_API_KEY }}
     - name: Unit Tests
       run: dotnet test
     - name: Build NuGet Package
       run: dotnet pack ./TinyYaml/TinyYaml.csproj --configuration Release -o NuGetPackages
     - name: Deploy NuGet Package Azure Artifacts
       run: dotnet nuget push ./NuGetPackages/TinyYaml.*.nupkg -s "drogoganor"
-      env:
-        PAT: ${{ secrets.AZURE_API_KEY }}
     - name: Deploy NuGet Package
       run: dotnet nuget push ./NuGetPackages/TinyYaml.*.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json
